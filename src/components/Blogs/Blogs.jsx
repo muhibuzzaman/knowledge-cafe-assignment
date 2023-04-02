@@ -17,7 +17,6 @@ const Blogs = () => {
                     key={blog.id}
                     blog={blog}></Blog>)
             }
-            <h1>{blogs.length}</h1>
         </div>
     );
 };
