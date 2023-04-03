@@ -3,11 +3,11 @@ import './Bookmark.css';
 
 const Bookmark = ({ bookCart }) => {
     let title = '';
-    let titleArray = []
+    let titleArray = [];
     for (const singleCart of bookCart) {
-        title = singleCart.title;
-        titleArray = title + singleCart.title;
+        title = title + singleCart.title;
     }
+    titleArray = title;
     return (
         <div className='bookmark-container'>
             <p className='bookmark-count'>Bookmarked Blogs: {bookCart.length}</p>
